@@ -1,0 +1,322 @@
+{
+  "source": "Google Play / com.lgeha.nuts",
+  "period": {
+    "from": "2023-09-24",
+    "to": "2026-09-22",
+    "days": 1095
+  },
+  "timestamp": {
+    "column": "at",
+    "tz": "naive (tz 정보 없음)",
+    "note": "google-play-scraper 원본. DB 적재 시 UTC로 간주하고 timestamptz 로 저장할 것"
+  },
+  "counts": {
+    "collected": 73040,
+    "analyzed": 36027,
+    "analyzed_no_event": 34008,
+    "event": 2019
+  },
+  "event_window": {
+    "from": "2026-07-01",
+    "to": "2026-08-01",
+    "note": "ThinQ 서비스 장애. 기본 분석에서 제외. is_event=true 로 플래그만 유지"
+  },
+  "baseline": "no_event",
+  "topics": [
+    {
+      "id": 0,
+      "label": "연결·기기 인식 실패",
+      "overall_share": 0.1025,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 1,
+      "label": "앱 전반·서버 장애",
+      "overall_share": 0.1588,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 2,
+      "label": "TV 제어·미러링",
+      "overall_share": 0.1104,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 3,
+      "label": "연결 끊김·재연동",
+      "overall_share": 0.093,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 4,
+      "label": "긍정 리뷰",
+      "overall_share": 0.1099,
+      "exclude_from_gap": true
+    },
+    {
+      "id": 5,
+      "label": "업데이트 후 고장",
+      "overall_share": 0.1019,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 6,
+      "label": "TV-앱 연동·펌웨어",
+      "overall_share": 0.1115,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 7,
+      "label": "세탁기·건조기",
+      "overall_share": 0.0545,
+      "exclude_from_gap": false
+    },
+    {
+      "id": 8,
+      "label": "기타 기능 요청",
+      "overall_share": 0.0862,
+      "exclude_from_gap": true
+    },
+    {
+      "id": 9,
+      "label": "에어컨·냉장고 제어",
+      "overall_share": 0.0712,
+      "exclude_from_gap": false
+    }
+  ],
+  "groups": {
+    "대형가전형": [
+      "영어권",
+      "러시아",
+      "독일",
+      "프랑스",
+      "이탈리아",
+      "폴란드",
+      "네덜란드",
+      "체코",
+      "베트남"
+    ],
+    "연결요청형": [
+      "브라질",
+      "튀르키예",
+      "중동(아랍어권)"
+    ],
+    "TV중심형": [
+      "스페인어권",
+      "인도네시아",
+      "헝가리"
+    ],
+    "한국": [
+      "한국"
+    ],
+    "대만": [
+      "대만"
+    ]
+  },
+  "markets": [
+    {
+      "code": "EN",
+      "name": "영어권",
+      "group": "대형가전형",
+      "collected_count": 24375,
+      "analyzed_count": 13080,
+      "analyzed_no_event": 12663,
+      "complaint_rate": 64.6,
+      "low_sample": false
+    },
+    {
+      "code": "BR",
+      "name": "브라질",
+      "group": "연결요청형",
+      "collected_count": 12285,
+      "analyzed_count": 5933,
+      "analyzed_no_event": 5804,
+      "complaint_rate": 47.9,
+      "low_sample": false
+    },
+    {
+      "code": "ES",
+      "name": "스페인어권",
+      "group": "TV중심형",
+      "collected_count": 12647,
+      "analyzed_count": 5781,
+      "analyzed_no_event": 5600,
+      "complaint_rate": 49.0,
+      "low_sample": false
+    },
+    {
+      "code": "RU",
+      "name": "러시아",
+      "group": "대형가전형",
+      "collected_count": 3070,
+      "analyzed_count": 2049,
+      "analyzed_no_event": 2007,
+      "complaint_rate": 62.3,
+      "low_sample": false
+    },
+    {
+      "code": "DE",
+      "name": "독일",
+      "group": "대형가전형",
+      "collected_count": 1797,
+      "analyzed_count": 1327,
+      "analyzed_no_event": 1294,
+      "complaint_rate": 70.7,
+      "low_sample": false
+    },
+    {
+      "code": "KR",
+      "name": "한국",
+      "group": "한국",
+      "collected_count": 4431,
+      "analyzed_count": 2204,
+      "analyzed_no_event": 1181,
+      "complaint_rate": 65.7,
+      "low_sample": false
+    },
+    {
+      "code": "FR",
+      "name": "프랑스",
+      "group": "대형가전형",
+      "collected_count": 2208,
+      "analyzed_count": 1037,
+      "analyzed_no_event": 1004,
+      "complaint_rate": 50.9,
+      "low_sample": false
+    },
+    {
+      "code": "IT",
+      "name": "이탈리아",
+      "group": "대형가전형",
+      "collected_count": 1273,
+      "analyzed_count": 845,
+      "analyzed_no_event": 820,
+      "complaint_rate": 59.5,
+      "low_sample": false
+    },
+    {
+      "code": "TR",
+      "name": "튀르키예",
+      "group": "연결요청형",
+      "collected_count": 1219,
+      "analyzed_count": 794,
+      "analyzed_no_event": 776,
+      "complaint_rate": 64.4,
+      "low_sample": false
+    },
+    {
+      "code": "PL",
+      "name": "폴란드",
+      "group": "대형가전형",
+      "collected_count": 1051,
+      "analyzed_count": 650,
+      "analyzed_no_event": 627,
+      "complaint_rate": 61.5,
+      "low_sample": false
+    },
+    {
+      "code": "NL",
+      "name": "네덜란드",
+      "group": "대형가전형",
+      "collected_count": 594,
+      "analyzed_count": 425,
+      "analyzed_no_event": 410,
+      "complaint_rate": 53.6,
+      "low_sample": false
+    },
+    {
+      "code": "AR",
+      "name": "중동(아랍어권)",
+      "group": "연결요청형",
+      "collected_count": 2111,
+      "analyzed_count": 391,
+      "analyzed_no_event": 376,
+      "complaint_rate": 43.2,
+      "low_sample": true
+    },
+    {
+      "code": "CZ",
+      "name": "체코",
+      "group": "대형가전형",
+      "collected_count": 490,
+      "analyzed_count": 336,
+      "analyzed_no_event": 332,
+      "complaint_rate": 60.4,
+      "low_sample": true
+    },
+    {
+      "code": "VN",
+      "name": "베트남",
+      "group": "대형가전형",
+      "collected_count": 1076,
+      "analyzed_count": 345,
+      "analyzed_no_event": 331,
+      "complaint_rate": 51.3,
+      "low_sample": true
+    },
+    {
+      "code": "ID",
+      "name": "인도네시아",
+      "group": "TV중심형",
+      "collected_count": 852,
+      "analyzed_count": 341,
+      "analyzed_no_event": 323,
+      "complaint_rate": 40.5,
+      "low_sample": true
+    },
+    {
+      "code": "HU",
+      "name": "헝가리",
+      "group": "TV중심형",
+      "collected_count": 374,
+      "analyzed_count": 262,
+      "analyzed_no_event": 251,
+      "complaint_rate": 66.4,
+      "low_sample": true
+    },
+    {
+      "code": "TW",
+      "name": "대만",
+      "group": "대만",
+      "collected_count": 504,
+      "analyzed_count": 227,
+      "analyzed_no_event": 209,
+      "complaint_rate": 61.7,
+      "low_sample": true
+    }
+  ],
+  "thresholds": {
+    "lift": 1.3,
+    "residual": 2.0,
+    "group_common": 0.5,
+    "partial_common": 0.25
+  },
+  "expected_verdicts": {
+    "그룹 공통": 9,
+    "광역 공통": 6,
+    "현지화 갭": 4,
+    "부분 공통": 4,
+    "단독 시장": 4
+  },
+  "expected_gaps_file": "expected_gaps.csv",
+  "full_artifacts": {
+    "thinq_wide_clustered.csv": {
+      "bytes": 13059433,
+      "rows": 36027,
+      "sha256": "8fb0c44cea85ff6336fbe7fc14dbe72a2e027ae44a62be77314dd40b7441dda4"
+    },
+    "wide_emb.npy": {
+      "bytes": 55337600,
+      "shape": [36027, 384],
+      "dtype": "float32",
+      "sha256": "adc8f4b8541a946f01242811515fdfc84aa3928e98b81db23a08e15ed24eab3e"
+    }
+  },
+  "files": {
+    "lift_no_event.csv": "검증 기준 행렬 (주 분석)",
+    "lift_all.csv": "이벤트 포함. 참고용",
+    "expected_gaps.csv": "판정 27건 정답지",
+    "topic_centroids.npy": "10 x 384. 재클러스터링 금지의 근거",
+    "reviews_sample.csv": "스키마 설계용 100행. 전량은 Colab에서 직접 적재"
+  }
+}

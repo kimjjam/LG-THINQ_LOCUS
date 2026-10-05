@@ -1,0 +1,5 @@
+.env*
+/.serena/
+/supabase/.temp/
+/data/thinq_wide_clustered.csv
+/data/wide_emb.npy

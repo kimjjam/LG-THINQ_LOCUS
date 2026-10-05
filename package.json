@@ -1,0 +1,37 @@
+{
+  "name": "thinq-locus",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx scripts/seed.ts",
+    "seed:check": "tsx scripts/seed.ts --dry-run",
+    "verify:data": "tsx scripts/verify-data.ts",
+    "verify:reference": "tsx scripts/verify-data.ts --reference-only"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.0",
+    "@supabase/supabase-js": "2.117.1",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.14",
+    "@types/node": "20.19.17",
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "csv-parse": "7.0.2",
+    "eslint": "9.36.0",
+    "eslint-config-next": "16.3.6",
+    "supabase": "2.117.0",
+    "tailwindcss": "4.1.14",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
